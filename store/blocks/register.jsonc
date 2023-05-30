@@ -1,0 +1,70 @@
+{
+    "store.custom#register": {
+      "blocks": [
+        "list-context.image-list#register",
+        "flex-layout.row#title-register",
+        "flex-layout.row#register"
+      ]
+    },
+    "flex-layout.row#title-register": {
+      "props": {
+        "blockClass": "title-form-page"
+      },
+      "children": [
+        "rich-text#title-register"
+      ]
+    },
+    "rich-text#title-register": {
+      "props": {
+        "blockClass": "title-form-page",
+        "text": "# Cadastre-se"
+      }
+    },
+    "flex-layout.row#register": {
+      "props": {
+        "blockClass": "page-form-container"
+      },
+      "children": [
+        
+        "flex-layout.col#text-register",
+        "flex-layout.col#form-register"
+      ]
+    },
+    "list-context.image-list#register": {
+      "children": [
+          "slider-layout#main-carousel"
+      ],
+      "props": {
+          "images": [
+              {
+                  "image": "https://redfeather.vtexassets.com/arquivos/amarca.jpg",
+                  "mobileImage": "https://redfeather.vtexassets.com/arquivos/amarca_mobile.png"
+              }
+          ]
+      }
+    },
+    "flex-layout.col#text-register": {
+      "props": {
+        "blockClass": "col-text",
+        "width": "35%"
+      },
+      "children": [
+        "rich-text#text-register"
+      ]
+    },
+    "flex-layout.col#form-register": {
+      "props": {
+        "blockClass": "col-form",
+        "width": "65%"
+      },
+      "children": [
+        "register"
+      ]
+    },
+    "rich-text#text-register": {
+      "props": {
+        "text": "Cadastre-se para se tornar um revendedor Red Feather, tenha acesso aos melhores preços!"
+      }
+    }
+  }
+  

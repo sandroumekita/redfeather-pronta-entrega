@@ -1,0 +1,44 @@
+.loginCta {
+    width: 200px;
+    background-color: #000;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }   
+  .loginRegister {
+    width: 200px;
+    border: 1px solid #000;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    margin-top: 30px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 15px;
+  }   
+  .loginCta:hover {
+      opacity: .75;
+  }
+  .containerLoggedIn .responseMessage {
+    font-size: 16px;
+    color: #000;
+    margin: 15px 30px;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+}

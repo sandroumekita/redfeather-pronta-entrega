@@ -1,0 +1,39 @@
+{
+    "custom-filter": {
+        "component": "Filter"
+    },
+    "measurement-chart": {
+        "component": "MeasurementChart"
+    },
+    "filter-selected": {
+        "component": "FilterSelected"
+    },
+    "filter-trigger": {
+        "component": "FilterTrigger"
+    },
+    "teste": {
+        "component": "Teste"
+    },
+    "flag-shelf": {
+        "component": "FlagShelf"
+    },
+    "flag-detail": {
+        "component": "FlagDetail"
+    },
+    "grid-sku-selector": {
+        "component": "GridSkuSelector"
+    },
+    "register": {
+        "component": "Register"
+    },
+    "wdt-condition-is-logged-in": {
+        "component": "WdtConditionIsLoggedIn"
+    },
+    "wdt-login": {
+        "component": "LoggedIn",
+        "composition": "children"
+    },
+    "wdt-back": {
+        "component": "Back"
+    }
+}

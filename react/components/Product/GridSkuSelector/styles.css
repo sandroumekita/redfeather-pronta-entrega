@@ -1,0 +1,280 @@
+.wrapperSkuSelectorScroll {
+    height: 280px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.wrapperSkuSelector {
+    flex-direction: column;
+    display: flex;
+}
+
+/* width */
+.wrapperSkuSelector::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+.wrapperSkuSelector::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+.wrapperSkuSelector::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+.wrapperSkuSelector::-webkit-scrollbar-thumb:hover {
+    background: #353535; 
+  }
+
+.SkuSelector {
+    display: flex;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: max-content;
+}
+
+.SkuSelector:hover {
+    background: #f3f3f3;
+}
+
+.SkuSelector img {
+    width: 85px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.SelectorInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    width: 100%;
+}
+
+.Selector {
+    border: 1px solid #dedede;
+    padding: 3px 15px;
+    border-radius: 5px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.Title {
+    font-size: 14px;
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.GridVariation {
+    display: flex;
+}
+
+.Row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Price {
+    color: #aaa;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.Price strong {
+    color: #000;
+    font-size: 14px;
+}
+
+.Quantity {
+    display: flex;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    background: #fff;
+    font-size: 14px;
+}
+
+.Quantity input {
+    border: 0px;
+    width: 80px;
+    text-align: center;
+    background: transparent;
+}
+
+.Quantity input:focus {
+    outline: none;
+}
+
+.Quantity button {
+    background: #dedede;
+    border: 0;
+    font-size: 18px;
+    color: #000;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 20px 15px 0;
+    text-transform: uppercase;
+    color: #aaa;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.Totals .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.AddToCart {
+    background: #000;
+    color: #fff;
+    height: 55px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Select {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.loginCta {
+    width: 200px;
+    background-color: #000;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }   
+  .loginRegister {
+    width: 200px;
+    border: 1px solid #000;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    margin-top: 30px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 15px;
+  }   
+  .loginCta:hover {
+      opacity: .75;
+  }
+  .responseMessage {
+    font-size: 16px;
+    color: #000;
+    margin: 15px 0;
+    max-width: 100%;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+  }
+
+
+.var_36 {
+    order: 1;
+}
+
+.var_38 {
+    order: 2;
+}
+
+.var_40 {
+    order: 3;
+}
+
+.var_42 {
+    order: 4;
+}
+
+.var_44 {
+    order: 5;
+}
+
+.var_46 {
+    order: 6;
+}
+
+.var_48 {
+    order: 7;
+}
+.var_50 {
+    order: 8;
+}
+.var_PP {
+    order: 1;
+}
+.var_P {
+    order: 2;
+}
+.var_M {
+    order: 3;
+}
+.var_G {
+    order: 4;
+}
+.var_GG {
+    order: 5;
+}
+
+
+.var_XGG {
+    order: 6;
+}
+
+.var_3G {
+    order: 7;
+}
+
+.var_XXGG {
+    order: 8;
+}
+
+.var_4G {
+    order: 9;
+}
+
+.var_EXG {
+    order: 7;
+}

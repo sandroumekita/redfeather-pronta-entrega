@@ -1,0 +1,22 @@
+{
+  "store.custom#not-logged": {
+    "children": ["flex-layout.row#not-logged"],
+    "render": "client"
+  },
+  "flex-layout.row#not-logged": {
+    "props": {
+      "blockClass": "contact"
+    },
+    "children": ["flex-layout.col#not-logged"]
+  },
+  "flex-layout.col#not-logged": {
+    "children": ["rich-text#not-logged"]
+  },
+  "rich-text#not-logged": {
+    "props": {
+      "text": "## Seu acesso ainda não foi liberado pelo time da Red Feather",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

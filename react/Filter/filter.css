@@ -1,0 +1,189 @@
+@import url(https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.priceRange .filtersWrapper .filter__container {
+    display: none;
+}
+.priceRange .filtersWrapper :global(.vtex-search-result-3-x-filter__container--priceRange) {
+    width: 100%;
+    display: block;
+}
+.priceRange .filtersWrapper :global(.vtex-search-result-3-x-filter__container--priceRange) .filterTemplateOverflow {
+    padding: 0 10px;
+}
+:global(.vtex-search-result-3-x-filter__container--priceRange) {
+    border: 0;
+}
+:global(.vtex-search-result-3-x-filter__container--priceRange) .filterTitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+.filterItem {
+    color: #000;
+    display: block;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+.filterItemColor {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(0,0,0,.4);
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.filterItemColorSelected {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(0,0,0,.4);
+    position: relative;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.filterItemColorSelected::after,
+.filterItemColorSelected::before {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,.4);
+}
+.filterItemColorSelected::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.filterItemColorSelected::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.filterItemTamanho {
+    color: #000;
+    border: 1px solid #dedede;
+    display: block;
+    padding: 12px 15px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.filterItemTamanhoSelected {
+    color: #fff;
+    border: 1px solid #000;
+    display: block;
+    padding: 12px 15px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    pointer-events: none;
+    text-decoration: none;
+    background-color: #000;
+}
+.filterContentColor {
+}
+.filterContentColor, .filterContentTamanho {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    align-items: center;
+}
+.filters > div {
+    padding-bottom: 20px;
+}
+.filtersWrapper {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    padding-top: 65px;
+    flex-direction: column;
+}
+.priceRange .filtersWrapper {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+.filtersContainer {
+    display: flex;
+    max-width: 0;
+    overflow-x: hidden;
+    transition: max-width .1s linear;
+    flex-direction: column;
+}
+@medzia (min-height: 728px) {
+    .filtersContainer {
+        top: 40px;
+        position: sticky;
+    }
+}
+.filtersContainer.open {
+    width: 350px;
+    max-width: 350px;
+}
+.filterCheckBox {
+    width: 12px;
+    border: 1px solid #dedede;
+    height: 12px;
+    display: block;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.filterItemContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.checked {
+    width: 12px;
+    border: 1px solid #dedede;
+    height: 12px;
+    display: block;
+    position: relative;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.checked::before {
+    top: 50%;
+    left: 50%;
+    content: "\f12e";
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    font-family: "feather-icons";
+}
+.filters h3 {
+    font-size: 16px;
+}
+.button {
+    top: 16px;
+    width: max-content;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 11px 15px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+.button::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: block;
+    filter: invert(100);
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='393pt' viewBox='-4 0 393 393.99003' width='393pt'%3E%3Cpath d='m368.3125 0h-351.261719c-6.195312-.0117188-11.875 3.449219-14.707031 8.960938-2.871094 5.585937-2.3671875 12.3125 1.300781 17.414062l128.6875 181.28125c.042969.0625.089844.121094.132813.183594 4.675781 6.3125 7.203125 13.957031 7.21875 21.816406v147.796875c-.027344 4.378906 1.691406 8.582031 4.777344 11.6875 3.085937 3.105469 7.28125 4.847656 11.65625 4.847656 2.226562 0 4.425781-.445312 6.480468-1.296875l72.3125-27.574218c6.480469-1.976563 10.78125-8.089844 10.78125-15.453126v-120.007812c.011719-7.855469 2.542969-15.503906 7.214844-21.816406.042969-.0625.089844-.121094.132812-.183594l128.683594-181.289062c3.667969-5.097657 4.171875-11.820313 1.300782-17.40625-2.832032-5.511719-8.511719-8.9726568-14.710938-8.960938zm-131.53125 195.992188c-7.1875 9.753906-11.074219 21.546874-11.097656 33.664062v117.578125l-66 25.164063v-142.742188c-.023438-12.117188-3.910156-23.910156-11.101563-33.664062l-124.933593-175.992188h338.070312zm0 0'/%3E%3C/svg%3E");
+    background-size: 16px 16px;
+    margin-left: 10px;
+}

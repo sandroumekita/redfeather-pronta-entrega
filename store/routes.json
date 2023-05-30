@@ -1,0 +1,14 @@
+{
+    "store.custom#contact-us": {
+        "path": "/contato"
+    },
+    "store.custom#custom-query": {
+        "path": "/custom-query-example"
+    },
+    "store.custom#register": {
+        "path": "/cadastre-se"
+    },
+    "store.custom#quem-somos": {
+        "path": "/nos"
+    }
+}

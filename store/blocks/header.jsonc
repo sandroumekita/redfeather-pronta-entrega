@@ -1,0 +1,684 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": ["wdt-login", "flex-layout.row#desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "blockClass": "header-main-row-desktop"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#menu-desktop",
+      "flex-layout.col#search-bar-desktop",
+      "flex-layout.col#utils-desktop"
+    ]
+  },
+  "wdt-login": {
+    "children": ["login#full"]
+  },
+  "login#full": {
+    "props": {
+      "login-content": {
+        "defaultOption": false
+      }
+    }
+  },
+  "flex-layout.row#header-sup-whatsapp": {
+    "props": {
+      "blockClass": "header-sup-whatsapp",
+      "width": "15%"
+    },
+    "children": ["rich-text#header-sup-whatsapp"]
+  },
+  "rich-text#header-sup-whatsapp": {
+    "props": {
+      "text": "[(11) 3926-1098](https://api.whatsapp.com/send?phone=551139261098)",
+      "blockClass": "header-sup-whatsapp"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "14%"
+    },
+    "children": ["logo"]
+  },
+  "flex-layout.col#menu-desktop": {
+    "props": {
+      "width": "49%"
+    },
+    "children": ["vtex.menu@2.x:menu#menu-header-1"]
+  },
+  "flex-layout.col#search-bar-desktop": {
+    "props": {
+      "width": "grow"
+    },
+    "children": ["search-bar"]
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "Encontre um produto"
+    }
+  },
+  "flex-layout.col#utils-desktop": {
+    "props": {
+      "width": "8%",
+      "blockClass": "utils-desktop"
+    },
+    "children": ["login", "minicart.v2"]
+  },
+  "vtex.menu@2.x:menu#atendimento": {
+    "children": [
+      "menu-item#nossas-lojas-header",
+      "menu-item#atendimento-header"
+    ]
+  },
+  "menu-item#nossas-lojas-header": {
+    "props": {
+      "id": "menu-item-nossas-lojas",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "nossas-lojas-header",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nossas-lojas",
+        "noFollow": false,
+        "tagTitle": "Nossas Lojas",
+        "text": "Nossas Lojas"
+      }
+    }
+  },
+  "menu-item#atendimento-header": {
+    "props": {
+      "id": "menu-item-atendimento",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "atendimento-header",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#atendimento-header"]
+  },
+  "vtex.menu@2.x:submenu#atendimento-header": {
+    "children": ["rich-text#info-sac-footer"]
+  },
+  "image#menu-header": {
+    "props": {
+      "src": "https://uvline.myvtex.com/arquivos/menu-header.png"
+    }
+  },
+  //MENU HEADER -- INIT
+  //Mobile - INIT
+  "vtex.menu@2.x:menu#menu-header-mobile-1": {
+    "props": {
+      "blockClass": ["top-menu", "top-menu-mobile"]
+    },
+    "children": [
+      "menu-item#marca-mobile",
+      "menu-item#news",
+      "menu-item#produtos-mobile",
+      "menu-item#perguntas-mobile"
+    ]
+  },
+  "menu-item#marca-mobile": {
+    "props": {
+      "id": "menu-item-marca-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-marca-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "a-marca",
+        "text": "a marca"
+      }
+    }
+  },
+  "menu-item#produtos-mobile": {
+    "props": {
+      "id": "menu-item-produtos-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-produtos-mobile",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "produtos",
+        "text": "produtos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#produtos-mobile-accordion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#produtos-mobile-accordion": {
+    "props": {
+      "width": "100%",
+      "blockClass": "submenu-header"
+    },
+    "children": ["vtex.menu@2.x:menu#coluna-produtos-mobile-accordion"]
+  },
+  "vtex.menu@2.x:menu#coluna-produtos-mobile-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-camisetas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Camisetas",
+            "tagTitle": "camisetas",
+            "text": "camisetas"
+          }
+        },
+        {
+          "id": "menu-item-camisas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Camisas",
+            "tagTitle": "camisas",
+            "text": "camisas"
+          }
+        },
+        {
+          "id": "menu-item-shorts",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Shorts",
+            "tagTitle": "shorts",
+            "text": "shorts"
+          }
+        },
+        {
+          "id": "menu-item-bermudas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Bermudas",
+            "tagTitle": "bermudas",
+            "text": "bermudas"
+          }
+        },
+        {
+          "id": "menu-item-tricot",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Tricot",
+            "tagTitle": "tricot",
+            "text": "tricot"
+          }
+        },
+        {
+          "id": "menu-item-casacos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Casacos",
+            "tagTitle": "casacos",
+            "text": "casacos"
+          }
+        },
+        {
+          "id": "menu-item-calca",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Calca",
+            "tagTitle": "calca",
+            "text": "CALÇA"
+          }
+        },
+        {
+          "id": "menu-item-infantil",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Infantil",
+            "tagTitle": "infantil",
+            "text": "infantil"
+          }
+        },
+        {
+          "id": "menu-item-atacadista",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "https://www.redfeatheratacado.com/Customer/loginB2B",
+            "tagTitle": "atacadista",
+            "text": "atacadista"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#perguntas-mobile": {
+    "props": {
+      "id": "menu-item-perguntas-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-perguntas-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "perguntas-frequentes",
+        "text": "Faq"
+      }
+    }
+  },
+  "menu-item#contato-mobile": {
+    "props": {
+      "id": "menu-item-contato-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-contato-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "contato",
+        "text": "contato"
+      }
+    }
+  },
+  //Mobile - END
+  //Desktop - INIT
+  "vtex.menu@2.x:menu#menu-header-1": {
+    "props": {
+      "blockClass": "top-menu"
+    },
+    "children": [
+      "menu-item#marca",
+      "menu-item#news",
+      "menu-item#produtos",
+      "menu-item#perguntas"
+    ]
+  },
+  "menu-item#marca": {
+    "props": {
+      "id": "menu-item-marca",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-marca",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "a-marca",
+        "text": "a marca"
+      }
+    }
+  },
+  "menu-item#news": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-news",
+      "itemProps": {
+        "type": "internal",
+        "href": "/news",
+        "noFollow": false,
+        "tagTitle": "news",
+        "text": "News"
+      }
+    }
+  },
+  "menu-item#produtos": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-produtos",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "produtos",
+        "text": "produtos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#produtos"]
+  },
+  "menu-item#perguntas": {
+    "props": {
+      "id": "menu-item-perguntas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-perguntas",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "perguntas-frequentes",
+        "text": "Faq"
+      }
+    }
+  },
+  "menu-item#contato": {
+    "props": {
+      "id": "menu-item-contato",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-contato",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "contato",
+        "text": "contato"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu#produtos": {
+    "props": {
+      "width": "100%",
+      "blockClass": "submenu-header"
+    },
+    "children": ["vtex.menu@2.x:menu#coluna-produtos"]
+  },
+  "vtex.menu@2.x:menu#coluna-produtos": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-camisetas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Camisetas",
+            "tagTitle": "camisetas",
+            "text": "camisetas"
+          }
+        },
+        {
+          "id": "menu-item-camisas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Camisas",
+            "tagTitle": "camisas",
+            "text": "camisas"
+          }
+        },
+        {
+          "id": "menu-item-shorts",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Shorts",
+            "tagTitle": "shorts",
+            "text": "shorts"
+          }
+        },
+        {
+          "id": "menu-item-bermudas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Bermudas",
+            "tagTitle": "bermudas",
+            "text": "bermudas"
+          }
+        },
+        {
+          "id": "menu-item-tricot",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Tricot",
+            "tagTitle": "tricot",
+            "text": "tricot"
+          }
+        },
+        {
+          "id": "menu-item-casacos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Casacos",
+            "tagTitle": "casacos",
+            "text": "casacos"
+          }
+        },
+        {
+          "id": "menu-item-calca",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Calca",
+            "tagTitle": "calca",
+            "text": "CALÇA"
+          }
+        },
+        {
+          "id": "menu-item-infantil",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Infantil",
+            "tagTitle": "infantil",
+            "text": "infantil"
+          }
+        },
+        {
+          "id": "menu-item-atacadista",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "https://www.redfeatheratacado.com/Customer/loginB2B",
+            "tagTitle": "atacadista",
+            "text": "atacadista"
+          }
+        }
+      ]
+    }
+  },
+  //Desktop - END
+  //MENU HEADER -- END
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://redfeather.vtexassets.com/arquivos/logo-red-feather.svg?1",
+      "blockClass": "logo-header"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["wdt-login", "flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "flex-layout.row#row-1-header-mobile",
+      "flex-layout.row#row-2-header-mobile"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "flex-layout.row#row-1-header-mobile": {
+    "props": {
+      "blockClass": "1-header-mobile",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#menu-mobile",
+      "flex-layout.col#logo-mobile",
+      "flex-layout.col#utils-mobile"
+    ]
+  },
+  "flex-layout.row#row-2-header-mobile": {
+    "props": {
+      "blockClass": "2-header-mobile",
+      "colSizing": "auto"
+    },
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#menu-mobile": {
+    "props": {
+      "width": "20%"
+    },
+    "children": ["drawer#mobile"]
+  },
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "width": "60%"
+    },
+    "children": ["logo"]
+  },
+  "flex-layout.col#utils-mobile": {
+    "props": {
+      "width": "20%",
+      "blockClass": "utils-mobile"
+    },
+    "children": [
+      // "login",
+      "minicart.v2"
+    ]
+  },
+  "drawer#mobile": {
+    "props": {
+      "orientation": "horizontal"
+    },
+    "children": ["vtex.menu@2.x:menu#menu-header-mobile-1"]
+  },
+  //MINICART - init
+  "minicart.v2": {
+    "children": ["minicart-base-content"]
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-empty-state"],
+    "children": ["minicart-product-list", "flex-layout.row#minicart-footer"]
+  },
+  "flex-layout.row#minicart-footer": {
+    "props": {
+      "blockClass": "minicart-footer"
+    },
+    "children": ["flex-layout.col#minicart-footer"]
+  },
+  "flex-layout.col#minicart-footer": {
+    "children": ["minicart-summary", "minicart-checkout-button"]
+  },
+  "minicart-product-list": {
+    "blocks": ["product-list#minicart"]
+  },
+  "product-list#minicart": {
+    "blocks": ["product-list-content-mobile"]
+  },
+  "minicart-summary": {
+    "blocks": ["checkout-summary.compact#minicart"]
+  },
+  "checkout-summary.compact#minicart": {
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "totalizersToShow": ["Items", "Discounts"]
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
+    }
+  },
+  "minicart-empty-state": {
+    "children": ["flex-layout.row#empty-state"]
+  },
+  "flex-layout.row#empty-state": {
+    "children": ["flex-layout.col#empty-state"]
+  },
+  "flex-layout.col#empty-state": {
+    "children": ["rich-text#minicart-default-empty-state"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 5
+    }
+  },
+  "rich-text#minicart-default-empty-state": {
+    "props": {
+      "text": "Seu carrinho está vazio."
+    }
+  }
+  //MINICART - end
+}

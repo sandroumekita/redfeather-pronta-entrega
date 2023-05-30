@@ -1,0 +1,91 @@
+.flex {
+  display: flex;
+}
+
+.inputGroup {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.inputGroup label, .inputGroup span {
+  color: #000 !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  font-size: 12px !important;
+  opacity: .6;
+}
+
+.maxW35 {
+  max-width: 35% !important;
+}
+
+.maxW20 {
+  max-width: 20% !important;
+}
+
+.button button,
+.buttonForm button {
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  background: #000;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.button button:hover {
+  background: #000;
+  color: #fff;
+  opacity:.9;
+}
+
+@media(max-width:767px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex .vtex-input {
+    margin-bottom: 15px;
+  }
+}
+
+.alert-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 50px 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.alert-container h4 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.alert-container h4 span {
+  font-size: 16px;
+  color: rgba(0, 0, 0, .4);
+}
+
+.alert-container button {
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 14px;
+  margin-top: 20px;
+  background: #000;
+  font-weight: 600;
+  font-family: Poppins;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

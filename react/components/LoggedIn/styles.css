@@ -1,0 +1,20 @@
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 90vw;
+    max-width: 600px;
+    border: 1px solid #dedede;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,363 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#main-carousel",
+      "flex-layout.row#header-sup",
+      "rich-text#collection-title-1",
+      "flex-layout.row#shelf-1",
+      "flex-layout.row#video-home-1",
+      "flex-layout.row#banners-home-1",
+      "rich-text#collection-title-2",
+      "flex-layout.row#shelf-2"
+      //"flex-layout.row#cards-home-1",
+      //"flex-layout.row#newsletter"
+    ],
+    "render": "client"
+  },
+  "flex-layout.row#newsletter": {
+    "props": {
+      "blockClass": "newsletter"
+    },
+    "children": ["image#bg-newsletter", "flex-layout.col#newsletter"]
+  },
+  "image#bg-newsletter": {
+    "props": {
+      "src": "https://redfeather.vtexassets.com/arquivos/newsletter-bg.jpg"
+    }
+  },
+  "flex-layout.col#newsletter": {
+    "children": ["rich-text#title-newsletter", "newsletter"]
+  },
+  "rich-text#title-newsletter": {
+    "props": {
+      "blockClass": "title-newsletter",
+      "text": "### Cadastre-se \n Receba nossas promoções diretamente no seu e-mail"
+    }
+  },
+  "flex-layout.row#cards-home-1": {
+    "props": {
+      "blockClass": "cards-home-1"
+    },
+    "children": [
+      "link#card-home-1",
+      "link#card-home-2",
+      "link#card-home-3",
+      "link#card-home-4",
+      "link#card-home-5",
+      "link#card-home-6"
+    ]
+  },
+  "link#card-home-1": {
+    "props": {
+      "href": "/camisas"
+    },
+    "children": ["info-card#card-home-1"]
+  },
+  "link#card-home-2": {
+    "props": {
+      "href": "/camisetas"
+    },
+    "children": ["info-card#card-home-2"]
+  },
+  "link#card-home-3": {
+    "props": {
+      "href": "/shorts"
+    },
+    "children": ["info-card#card-home-3"]
+  },
+  "link#card-home-4": {
+    "props": {
+      "href": "/bermudas"
+    },
+    "children": ["info-card#card-home-4"]
+  },
+  "link#card-home-5": {
+    "props": {
+      "href": "/calcas"
+    },
+    "children": ["info-card#card-home-5"]
+  },
+  "link#card-home-6": {
+    "props": {
+      "href": "/infantil"
+    },
+    "children": ["info-card#card-home-6"]
+  },
+  "info-card#card-home-1": {
+    "props": {
+      "id": "card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-1.png",
+      "headline": "CAMISAS",
+      "subhead": "Sabendo que as camisas são elementos imprescindíveis do vestuário masculino, a Red Feather buscou uma modelagem slim com corte Italiano anatômico, desenhado justamente para ter um caimento perfeito no corpo. Venha conferir nossas coleções.",
+      "callToActionMode": "none",
+      "blockClass": "card-home",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#card-home-2": {
+    "props": {
+      "id": "card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-2.png",
+      "headline": "CAMISETAS",
+      "subhead": "Se você está buscando camisetas confortáveis e estilosas, encontrou o seu site favorito, a Red Feather busca por um design exclusivo, com a qualidade dos tecidos. Venha conferir as nossas coleções.",
+      "callToActionMode": "none",
+      "blockClass": "card-home",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#card-home-3": {
+    "props": {
+      "id": "card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-3.png",
+      "headline": "SHORTS",
+      "subhead": "Quem faz seu estilo é você, nós só trazemos as tendências. Os Shorts Red Feather, vem com diversas cores, tamanhos e modelos. Mas, como todas as nossas peças, eles são diferenciados, por seus estilos, estampas e corte. Venha conferir.",
+      "callToActionMode": "none",
+      "blockClass": "card-home",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#card-home-4": {
+    "props": {
+      "id": "card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-4.png",
+      "headline": "BERMUDAS",
+      "subhead": "Encontre Bermudas Masculinas de diversos modelos, com estilo, conforto e toda a versatilidade da marca Red Feather. Peças para o dia a dia, o básico que você procura com o toque de estilo da nossa marca.",
+      "callToActionMode": "none",
+      "blockClass": "card-home",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#card-home-5": {
+    "props": {
+      "id": "card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-5.png",
+      "headline": "CALÇAS",
+      "subhead": "Calças fazem parte do cotidiano, então a Red Feather decidiu que o seu dia a dia seria bem mais estiloso e confortável, com leveza e elegância. Todas as calças da nossa marca têm o nosso estilo, os detalhes foram cuidadosamente pensados, um a um, e o resultado final você vai perceber assim que vestir, espero que curta. Venha conferir.",
+      "callToActionMode": "none",
+      "blockClass": "card-home",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#card-home-6": {
+    "props": {
+      "id": "card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-6.png",
+      "headline": "INFANTIL",
+      "subhead": "Agora nossos meninos vão andar no estilo igual papai. Nova linha pais e filhos já disponível.",
+      "callToActionMode": "none",
+      "blockClass": "card-home",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#video-home-1": {
+    "props": {
+      "blockClass": "video-home-1"
+    },
+    "children": ["list-context.image-list#video-home"]
+  },
+
+  "list-context.image-list#video-home": {
+    "children": ["slider-layout#video-home-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/video-home.png",
+          "mobileImage": "https://redfeather.vtexassets.com/arquivos/video_mobile.jpg?v=1",
+          "description": "Redfeather Campanha 2021",
+          "link": "https://www.youtube.com.br/"
+        }
+      ]
+    }
+  },
+  "slider-layout#video-home-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "flex-layout.row#banners-home-1": {
+    "props": {
+      "blockClass": "banners-home-1"
+    },
+    "children": ["image#banner-home-1", "image#banner-home-2"]
+  },
+  "image#banner-home-1": {
+    "props": {
+      "src": "https://redfeather.vtexassets.com/arquivos/banner-home-1.png",
+      "title": "Camisa Linho Gola Padre",
+      "link": "/Camisas"
+    }
+  },
+  "image#banner-home-2": {
+    "props": {
+      "src": "https://redfeather.vtexassets.com/arquivos/banner-home-2.png",
+      "title": "Conjuntos de Moletom",
+      "link": "/Moletom"
+    }
+  },
+  "rich-text#float-contacts": {
+    "props": {
+      "blockClass": "float-contacts",
+      "text": "[Whatsapp](https://www.google.com) [Lojas](https://www.google.com) [Contato](https://www.google.com)"
+    }
+  },
+
+  "flex-layout.row#header-sup": {
+    "props": {
+      "blockClass": "header-sup"
+    },
+    "children": ["rich-text#header-sup"]
+  },
+  "rich-text#header-sup": {
+    "props": {
+      "text": "[**PRIMEIRA TROCA GRÁTIS CONSULTE O REGULAMENTO**](/politica-de-troca-e-devolucao)",
+      "blockClass": "header-sup"
+    }
+  },
+
+  "list-context.image-list#main-carousel-category": {
+    "children": ["slider-layout#main-carousel"],
+    "props": {
+      "images": [
+        {
+          "image": "",
+          "mobileImage": ""
+        }
+      ]
+    }
+  },
+  "list-context.image-list#main-carousel": {
+    "children": ["slider-layout#main-carousel"],
+    "props": {
+      "images": [
+        {
+          "image": "https://redfeather.vtexassets.com/assets/vtex.file-manager-graphql/images/7398da67-1278-4cc0-802f-421ed64efb9f___fceb2a66bca118660846da4e656b55cd.jpg",
+          "mobileImage": "https://redfeather.vtexassets.com/assets/vtex.file-manager-graphql/images/ac821f0d-4680-4fdd-8abe-7c862f38cb0b___0b691515bc567eb0cef46e0c0cb9a3eb.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#main-carousel": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel-home"
+    }
+  },
+  "rich-text#collection-title-1": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "### Novidades"
+    }
+  },
+  "rich-text#collection-title-2": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "### Camisetas"
+    }
+  },
+  "rich-text#collection-title-3": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "### Nome da Coleção \n Lorem ipsum sit dollor met conducteur adiscipling"
+    }
+  },
+  "flex-layout.row#shelf-1": {
+    "children": ["list-context.product-list#demo-1"]
+  },
+  "list-context.product-list#demo-1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#main-showcase"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "flex-layout.row#shelf-2": {
+    "children": ["list-context.product-list#demo-2"]
+  },
+  "list-context.product-list#demo-2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#main-showcase"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "flex-layout.row#shelf-3": {
+    "children": ["list-context.product-list#demo-3"]
+  },
+  "list-context.product-list#demo-3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#main-showcase"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#main-showcase": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never"
+    }
+  },
+  "slider-layout#main-relatedProducts": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never"
+    }
+  },
+  "iframe#instagram": {
+    "props": {
+      "src": "https://www.wedigi.com.br/we.digi.tech/api/instagram/wdt-instagram.php?account=uvlineoficial",
+      "width": "1920",
+      "height": "400"
+    }
+  },
+  "rich-text#title-instagram": {
+    "props": {
+      "text": "@uvlineoficial",
+      "blockClass": ["title-instagram"]
+    }
+  },
+  "rich-text#title-blog": {
+    "props": {
+      "text": "Blog",
+      "blockClass": ["title-instagram"]
+    }
+  }
+}
