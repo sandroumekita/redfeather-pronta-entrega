@@ -1,0 +1,17 @@
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css");
+.relatedProducts {
+  margin: 0 25px 30px;
+}
+.relatedProducts .title {
+  color: #000;
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+.relatedProducts :global(.vtex-slider-0-x-dotsContainer) {
+  display: none !important;
+}

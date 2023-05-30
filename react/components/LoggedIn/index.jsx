@@ -22,8 +22,6 @@ const LoggedIn = ({ children }) => {
         fetch(url, options)
           .then((res) => res.json())
           .then((data) => {
-            console.info("Aprovação:", data[0].approved);
-
             if (data[0].approved != true) {
               if (window.location.href.indexOf("/falta-liberacao") == -1) {
                 window.location.href = "/falta-liberacao";

@@ -1,0 +1,21 @@
+.emailInputContainer,
+.nameInputContainer,
+.phoneInputContainer {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 16px;
+}
+
+.formSubmitContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.formSubmitContainer :global(.vtex-button) {
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.defaultSuccessMessage {
+  text-align: center;
+}
