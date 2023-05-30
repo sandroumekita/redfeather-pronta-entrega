@@ -11,8 +11,6 @@
       "flex-layout.row#product-main",
       "shelf.relatedProducts#view",
       "shelf.relatedProducts#buy",
-      // "rich-text#collection-title-3",
-      // "flex-layout.row#relatedProducts",
       "product-questions-and-answers"
     ]
   },
@@ -21,8 +19,6 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main-mobile",
       "flex-layout.row#description",
-      // "rich-text#collection-title-3",
-      // "flex-layout.row#relatedProducts",
       "product-questions-and-answers"
     ]
   },
@@ -39,17 +35,7 @@
       "product-identifier.product",
       "flex-layout.row#product-name",
       "stack-layout",
-      // "product-rating-summary",
-      // "flex-layout.row#list-price-savings",
-      // "product-separator",
-      "sku-selector",
-      "flex-layout.row#selling-price",
-      "flex-layout.row#buy-button"
-      // "flex-layout.row#relatedProducts",
-      // "product-assembly-options",
-      // "product-gifts",
-      // "availability-subscriber",
-      // "share#default"
+      "grid-sku-selector"
     ]
   },
   "shelf.relatedProducts#view": {
@@ -92,11 +78,6 @@
       "blockClass": "relatedProducts"
     }
   },
-  // "flex-layout.row#relatedProducts": {
-  //   "children": [
-  //     "list-context.product-list#relatedProducts"
-  //   ]
-  // },
   "list-context.product-list#relatedProducts": {
     "blocks": [
       "product-summary.shelf"
@@ -126,8 +107,6 @@
       "blockClass": "pdp-description"
     },
     "children": [
-      // "product-description",
-      // "product-specifications",
       "tab-layout#product-description"
     ]
   },
@@ -282,7 +261,6 @@
   "modal-layout#tabela-de-medida": {
     "children": [
       "modal-actions.close",
-      // "product-images#tabela-de-medida"
       "measurement-chart"
     ],
     "props": {
@@ -299,19 +277,9 @@
       "teste",
       "product-identifier.product",
       "flex-layout.row#product-name",
-      // "product-rating-summary",
-      // "flex-layout.row#list-price-savings",
-      // "product-separator",
       "product-description",
       "grid-sku-selector",
       "wdt-back"
-      //"flex-layout.row#selling-price",
-      //"flex-layout.row#buy-button",
-      // "shelf.relatedProducts",
-      // "product-assembly-options",
-      // "product-gifts",
-      // "availability-subscriber",
-      // "share#default"
     ]
   },
   "flex-layout.row#selling-price": {
@@ -348,7 +316,6 @@
         "highlight"
       ],
       "blockClass": "summary"
-      // "message": "Selling price: {sellingPriceValue}"
     }
   },
   "flex-layout.row#buy-button": {
